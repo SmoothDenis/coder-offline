@@ -24,6 +24,6 @@ jobs:
           # context: .
           # platforms: linux/arm64/v8
           push: true
-          tags: smoothdenis/coder-tf-mirror:latest
+          tags: smoothdenis/coder-tf-mirror:v0.17.4
           # cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pulse_cam:buildcache
           # cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pulse_cam:buildcache,mode=max
