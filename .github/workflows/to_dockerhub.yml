@@ -18,4 +18,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: smoothdenis/coder-tf-mirror:v0.24.1
+          tags: smoothdenis/coder-tf-mirror:v2.12.3

@@ -1,4 +1,4 @@
-FROM ghcr.io/coder/coder:v0.24.1
+FROM ghcr.io/coder/coder:v2.12.3
 
 USER root
 
@@ -12,7 +12,7 @@ RUN mkdir -p /opt/terraform
 #
 # See https://github.com/coder/coder/blob/main/provisioner/terraform/serve.go#L24-L25
 # for supported Terraform versions.
-ARG TERRAFORM_VERSION=1.4.6
+ARG TERRAFORM_VERSION=1.9.2
 RUN curl -LOs https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
     && unzip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
     && mv terraform /opt/terraform \
